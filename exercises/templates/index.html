@@ -1,1 +1,23 @@
 <!-- Put the HTML template for your page here! -->
+
+<!doctype html>
+ <html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<h1> {{sentence}}swimming</h1>
+<p>it is a good sport because it is fun and healthy</p>
+<p> Here are some famous swimmers: </p>
+<ul>
+    {% for swimmer in swimmers %}
+    <li> {{swimmer}} </li>
+    {% endfor %}
+</ul>
+
+</body>
+
+
+</html>
+
