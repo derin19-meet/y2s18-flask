@@ -1,7 +1,12 @@
 /* Put your CSS Styling here! */
-
+div {
+    background-color: lightgrey;
+    width: 1000px;
+    padding: 40px;
+    margin: 15px;
+}
 body {
-    background-color: green;
+    background-color: #28D4EB;
 }
 
 

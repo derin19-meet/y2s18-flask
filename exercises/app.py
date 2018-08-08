@@ -8,7 +8,8 @@ app = Flask(__name__)
 def swimming():
     swimmers=["Michael Phelps", "Mark Spitz", "Matt Biondi", "Ryan Lochte"]
     return render_template("index.html", sentence="my favorite sport:",
-    swimmers=swimmers)
+    swimmers=swimmers,
+    likes_same_sport=True)
 
 
 if __name__ == '__main__':

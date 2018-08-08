@@ -7,14 +7,22 @@
 </head>
 
 <body>
-<h1> {{sentence}}swimming</h1>
-<p>it is a good sport because it is fun and healthy</p>
-<p> Here are some famous swimmers: </p>
-<ul>
+    <div><h1>{{sentence}}swimming</h1> </div>
+<img src="https://i.ytimg.com/vi/sQsgUM3HvWI/hqdefault.jpg" width="400" >
+
+    {% if likes_same_sport == True %}
+    <p>it is a good sport because it is fun and healthy</p>
+    <h2> Here are some famous swimmers: </h2>
+    <ul>
     {% for swimmer in swimmers %}
     <li> {{swimmer}} </li>
     {% endfor %}
-</ul>
+    </ul>
+
+    {% else %}
+    <p>it is a good sport because it is fun and healthy</p>
+{% endif %}
+
 
 </body>
 
